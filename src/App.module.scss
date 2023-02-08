@@ -1,0 +1,38 @@
+body {
+  // font-family: "RobotoRegular";
+  color: var(--base-color);
+  background: var(--background-light);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar content"
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.content {
+  grid-area: content;
+}
+
+:root {
+  --base-color: #fff;
+  --secondary-color: #A1A1AA;
+
+  --background-dark: #202124;
+  --background-light: #27272A;
+
+  --border: #414144;
+}

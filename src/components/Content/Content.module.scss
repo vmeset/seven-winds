@@ -1,0 +1,27 @@
+.content {
+    grid-area: content;
+    background: var(--background-dark);
+}
+
+.contentHeader {
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+}
+
+.contentHeader p {
+    margin: 0;
+    padding: 11px 15px 12px 15px;
+    border-right: 1px solid var(--border);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 110px 1fr 200px 200px 200px;
+    align-items: center;
+}
+
+.list svg {
+    margin-bottom: -5px;
+}
